@@ -50,6 +50,7 @@
     <Compile Include="PropertyEditor.Designer.cs">
       <DependentUpon>PropertyEditor.cs</DependentUpon>
     </Compile>
+    <Compile Include="XCommand.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Plugins\Plugins.csproj">

@@ -13,6 +13,7 @@ namespace Painter.Views.ToolBox
         public XCommand xcom;
         public PRightToolBox PropertyEditor;
         public IList<IFigurePlugin> AddedPluginsList = new List<IFigurePlugin>();
+        public IFigurePlugin ActiveFigurePlugin;
 
         public PLeftToolBox()
         {
@@ -28,9 +29,15 @@ namespace Painter.Views.ToolBox
             {
                 Button prevButton = groupBox1.Controls.OfType<Button>().Last();
                 btn.Location = new Point(prevButton.Location.X, prevButton.Location.Y + prevButton.Height);
+                ActiveFigurePlugin = plugin;
             }
             groupBox1.Controls.Add(btn);
-            btn.Click += (sender,e)=>PropertyEditor.AddPlugin(plugin);
+            btn.Click += (sender,e)=>
+            {
+                ActiveFigurePlugin = plugin;
+                PropertyEditor.AddPlugin(plugin);
+
+            };
             AddedPluginsList.Add(plugin);
         }
     }

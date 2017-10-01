@@ -27,7 +27,7 @@ namespace Painter
 
             pTabControl1.xcom = xcom;
 
-            xcom.pTabControl = pTabControl1;
+            xcom.PTabControl = pTabControl1;
 
             Load += Form1_Load;
         }

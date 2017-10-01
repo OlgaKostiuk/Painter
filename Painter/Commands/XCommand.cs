@@ -10,15 +10,18 @@ namespace Painter.Commands
 {
     public class XCommand
     {
-        public PTabControl pTabControl;
+        public PTabControl PTabControl;
 
-        public ActionOpen actionOpen;
-        public ActionSave actionSave;
-
+        public ActionOpen ActionOpen;
+        public ActionSave ActionSave;
+        public ActionAddTab ActionAddTab;
+        public ActionSelectTab ActionSelectTab;
         public XCommand()
         {
-            actionOpen = new ActionOpen(this);
-            actionSave = new ActionSave(this);
+            ActionOpen = new ActionOpen(this);
+            ActionSave = new ActionSave(this);
+            ActionAddTab = new ActionAddTab(this);
+            ActionSelectTab = new ActionSelectTab(this);
         }
     }
 }

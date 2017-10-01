@@ -45,6 +45,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\Actions\ActionAddTab.cs" />
+    <Compile Include="Commands\Actions\ActionSelectTab.cs" />
     <Compile Include="Plugins\Default\PropertyEditor.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -53,7 +55,7 @@
     </Compile>
     <Compile Include="Plugins\PluginsManager.cs" />
     <Compile Include="Views\Drawing\PTabControl.cs">
-      <SubType>UserControl</SubType>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Views\Drawing\PTabControl.Designer.cs">
       <DependentUpon>PTabControl.cs</DependentUpon>
