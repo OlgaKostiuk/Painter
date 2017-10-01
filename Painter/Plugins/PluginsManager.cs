@@ -22,7 +22,7 @@ namespace Painter.Plugins
 
         private void LoadFigurePlugins()
         {
-            foreach (string file in Directory.GetFiles(@".\Plugins", "*.dll"))
+            foreach (string file in Directory.GetFiles(@".\..", "*.dll"))
             {
                 Assembly assembly = Assembly.LoadFrom(Directory.GetCurrentDirectory() + file);
                 foreach (Type type in assembly.GetTypes())

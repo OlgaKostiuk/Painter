@@ -52,4 +52,7 @@
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy /Y "$(TargetDir)$(ProjectName)$(TargetExt)" "$(SolutionDir)Painter\bin\$(ProjectName)$(TargetExt)"</PostBuildEvent>
+  </PropertyGroup>
 </Project>
