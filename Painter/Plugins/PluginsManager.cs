@@ -22,6 +22,7 @@ namespace Painter.Plugins
 
         private void LoadFigurePlugins()
         {
+            //relative path to dll-s
             foreach (string file in Directory.GetFiles(@".\..", "*.dll"))
             {
                 Assembly assembly = Assembly.LoadFrom(Directory.GetCurrentDirectory() + file);
