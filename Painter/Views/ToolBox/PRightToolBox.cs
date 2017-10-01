@@ -17,6 +17,8 @@ namespace Painter.Views.ToolBox
         {
             groupBox1.Controls.Clear();
             groupBox1.Controls.Add(plugin.getPropertyEditor());
+
+
         }
     }
 }
