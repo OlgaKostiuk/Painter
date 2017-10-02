@@ -110,26 +110,26 @@
             this.renameTabToolStripMenuItem,
             this.closeTabeToolStripMenuItem});
             this.tabToolStripMenuItem.Name = "tabToolStripMenuItem";
-            this.tabToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
+            this.tabToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
             this.tabToolStripMenuItem.Text = "Tab";
             // 
             // newTabToolStripMenuItem
             // 
             this.newTabToolStripMenuItem.Name = "newTabToolStripMenuItem";
-            this.newTabToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.newTabToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.newTabToolStripMenuItem.Text = "New Tab";
             // 
             // renameTabToolStripMenuItem
             // 
             this.renameTabToolStripMenuItem.Name = "renameTabToolStripMenuItem";
-            this.renameTabToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.renameTabToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.renameTabToolStripMenuItem.Text = "Rename Tab";
             // 
             // closeTabeToolStripMenuItem
             // 
             this.closeTabeToolStripMenuItem.Name = "closeTabeToolStripMenuItem";
-            this.closeTabeToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
-            this.closeTabeToolStripMenuItem.Text = "Close Tabe";
+            this.closeTabeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.closeTabeToolStripMenuItem.Text = "Close Tab";
             // 
             // pagesToolStripMenuItem
             // 
