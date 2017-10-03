@@ -12,16 +12,9 @@ namespace Painter.Views
             InitializeComponent();
 
             newTabToolStripMenuItem.Click += new EventHandler((s,e)=>xcom.ActionAddTab.ActionPerformed(s,e));
-
-            Load += PMenu_Load;
         }
 
-        private void PMenu_Load(object sender, EventArgs e)
-        {
-            xcom.ActionAddTab.onCreateTab += ActionAddTab_onCreateTab;
-        }
-
-        private void ActionAddTab_onCreateTab(string tabName)
+        public void ActionAddTab_onCreateTab(string tabName)
         {
             ToolStripMenuItem newMenuTab = new ToolStripMenuItem();
             newMenuTab.Name = tabName;

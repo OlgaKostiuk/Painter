@@ -11,8 +11,8 @@ namespace Painter.Commands.Actions
     {
         XCommand xcom;
 
-        public delegate void createTab(string tabName);
-        public event createTab onCreateTab;
+        public delegate void CreateTab(string tabName);
+        public event CreateTab OnCreateTab;
 
         public ActionAddTab(XCommand xcom)
         {
@@ -27,7 +27,7 @@ namespace Painter.Commands.Actions
             xcom.PTabControl.Controls.Add(tab);
             xcom.PTabControl.SelectTab(tab);
 
-            onCreateTab(tab.Name);
+            OnCreateTab(tab.Name);
         }
     }
 }

@@ -16,6 +16,7 @@ namespace Painter.Commands
         public ActionSave ActionSave;
         public ActionAddTab ActionAddTab;
         public ActionSelectTab ActionSelectTab;
+
         public XCommand()
         {
             ActionOpen = new ActionOpen(this);

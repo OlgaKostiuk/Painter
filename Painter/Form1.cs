@@ -18,7 +18,10 @@ namespace Painter
             PluginsManager = new PluginsManager();
 
             xcom = new XCommand();
+            //xcom.ActionOpen = new ActionOpen(xcom);
             pMenu1.xcom = xcom;
+            xcom.ActionAddTab.OnCreateTab += pMenu1.ActionAddTab_onCreateTab;
+
             pStatusBar1.xcom = xcom;
             pToolBar1.xcom = xcom;
             pLeftToolBox1.xcom = xcom;
