@@ -7,11 +7,12 @@ using Painter.Views.Drawing;
 
 namespace Painter.Commands.Actions
 {
-    public class ActionAddTab
+    public class ActionAddTab : IActionAddTab
     {
         XCommand xcom;
 
         public delegate void CreateTab(string tabName);
+
         public event CreateTab OnCreateTab;
 
         public ActionAddTab(XCommand xcom)

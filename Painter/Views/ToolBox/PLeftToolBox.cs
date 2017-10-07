@@ -10,7 +10,7 @@ namespace Painter.Views.ToolBox
 {
     public partial class PLeftToolBox : UserControl
     {
-        public XCommand xcom;
+        public IXCommand xcom;
         public PRightToolBox PropertyEditor;
         public IList<IFigurePlugin> AddedPluginsList = new List<IFigurePlugin>();
         public IFigurePlugin ActiveFigurePlugin;

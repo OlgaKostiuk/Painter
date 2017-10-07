@@ -47,6 +47,11 @@
   <ItemGroup>
     <Compile Include="Commands\Actions\ActionAddTab.cs" />
     <Compile Include="Commands\Actions\ActionSelectTab.cs" />
+    <Compile Include="Commands\Actions\Interfaces\IActionSelectTab.cs" />
+    <Compile Include="Commands\Actions\Interfaces\IActionSave.cs" />
+    <Compile Include="Commands\Actions\Interfaces\IActionOpen.cs" />
+    <Compile Include="Commands\Actions\Interfaces\IActionAddTab.cs" />
+    <Compile Include="Commands\IXCommand.cs" />
     <Compile Include="Plugins\Default\PropertyEditor.cs">
       <SubType>UserControl</SubType>
     </Compile>

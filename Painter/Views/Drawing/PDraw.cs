@@ -5,7 +5,7 @@ namespace Painter.Views.Drawing
 {
     public partial class PDraw : PictureBox
     {
-        public XCommand xcom;
+        public IXCommand xcom;
         public PDraw()
         {
             InitializeComponent();

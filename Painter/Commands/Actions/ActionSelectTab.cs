@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Painter.Commands.Actions
 {
-    public class ActionSelectTab
+    public class ActionSelectTab : IActionSelectTab
     {
         XCommand xcom;
         public ActionSelectTab(XCommand xcom)

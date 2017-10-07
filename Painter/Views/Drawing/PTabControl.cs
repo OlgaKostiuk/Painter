@@ -5,7 +5,7 @@ namespace Painter.Views.Drawing
 {
     public partial class PTabControl : TabControl
     {
-        public XCommand xcom;
+        public IXCommand xcom;
         public int TabsCount = 0;
 
         public PTabControl()

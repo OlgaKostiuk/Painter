@@ -3,19 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Painter.Commands.Actions;
 
-namespace Painter.Commands.Actions
+namespace PainterTests.AutoTests.Mocks.Actions
 {
-    public class ActionOpen : IActionOpen
+    class ActionAddTab : IActionAddTab
     {
-        XCommand xcom;
-        public ActionOpen(XCommand xcom)
-        {
-            this.xcom = xcom;
-        }
         public void ActionPerformed(object sender, EventArgs e)
         {
-
+            throw new NotImplementedException();
         }
     }
 }

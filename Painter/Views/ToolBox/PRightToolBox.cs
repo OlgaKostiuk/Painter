@@ -7,7 +7,7 @@ namespace Painter.Views.ToolBox
 {
     public partial class PRightToolBox : UserControl
     {
-        public XCommand xcom;
+        public IXCommand xcom;
         public PRightToolBox()
         {
             InitializeComponent();

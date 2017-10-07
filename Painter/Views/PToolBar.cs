@@ -5,7 +5,7 @@ namespace Painter.Views
 {
     public partial class PToolBar : UserControl
     {
-        public XCommand xcom;
+        public IXCommand xcom;
         public PToolBar()
         {
             InitializeComponent();

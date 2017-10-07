@@ -5,7 +5,7 @@ namespace Painter.Views
 {
     public partial class PStatusBar : UserControl
     {
-        public XCommand xcom;
+        public IXCommand xcom;
         public PStatusBar()
         {
             InitializeComponent();

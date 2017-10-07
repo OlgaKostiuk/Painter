@@ -3,6 +3,7 @@ using System.Windows.Forms;
 using System.Reflection;
 using Plugins;
 using Painter.Commands;
+using Painter.Commands.Actions;
 using Painter.Plugins;
 
 namespace Painter
@@ -20,7 +21,7 @@ namespace Painter
             xcom = new XCommand();
             //xcom.ActionOpen = new ActionOpen(xcom);
             pMenu1.xcom = xcom;
-            xcom.ActionAddTab.OnCreateTab += pMenu1.ActionAddTab_onCreateTab;
+            (xcom.ActionAddTab as ActionAddTab).OnCreateTab += pMenu1.ActionAddTab_onCreateTab;
 
             pStatusBar1.xcom = xcom;
             pToolBar1.xcom = xcom;

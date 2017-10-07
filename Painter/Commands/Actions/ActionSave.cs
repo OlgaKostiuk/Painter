@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Painter.Commands.Actions
 {
-    public class ActionSave
+    public class ActionSave : IActionSave
     {
         XCommand xcom;
         public ActionSave(XCommand xcom)

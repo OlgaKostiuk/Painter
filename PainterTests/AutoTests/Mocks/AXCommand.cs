@@ -3,26 +3,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Painter.Commands;
 using Painter.Commands.Actions;
 using Painter.Views.Drawing;
 
-namespace Painter.Commands
+namespace PainterTests.AutoTests.Mocks
 {
-    public class XCommand : IXCommand
+    public class AXCommand : IXCommand
     {
         public PTabControl PTabControl { get; set; }
-
         public IActionOpen ActionOpen { get; }
         public IActionSave ActionSave { get; }
         public IActionAddTab ActionAddTab { get; }
         public IActionSelectTab ActionSelectTab { get; }
 
-        public XCommand()
+        public AXCommand()
         {
-            ActionOpen = new ActionOpen(this);
-            ActionSave = new ActionSave(this);
-            ActionAddTab = new ActionAddTab(this);
-            ActionSelectTab = new ActionSelectTab(this);
+            ActionOpen = new Actions.ActionOpen();
+            ActionSave = new Actions.ActionSave();
+            ActionAddTab = new Actions.ActionAddTab();
+            ActionSelectTab = new Actions.ActionSelectTab();
         }
     }
 }

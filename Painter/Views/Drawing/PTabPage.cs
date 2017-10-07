@@ -7,7 +7,7 @@ namespace Painter.Views.Drawing
     {
         public PDraw pdraw;
         public string path = null;
-        public PTabPage(XCommand xcom)
+        public PTabPage(IXCommand xcom)
         {
             InitializeComponent();
             pdraw = new PDraw();

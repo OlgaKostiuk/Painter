@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.3
+VisualStudioVersion = 15.0.26730.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Painter", "Painter\Painter.csproj", "{ECF0A8A9-C09E-41B5-AC7E-7DE6B8CCB1B6}"
 EndProject
@@ -12,6 +12,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugins", "Plugins\Plugins.csproj", "{AD561C6B-E822-4ED8-8EBD-C256DFE7DFA1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{BB8705EA-BA34-4DFC-97D0-2231A531D06C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestFormCreator", "TestFormCreator\TestFormCreator.csproj", "{E84C5415-168F-4759-83DB-B08DCF2AF49E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PainterTests", "PainterTests\PainterTests.csproj", "{5906854C-8A63-47EB-9F30-F3DB375D9174}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{BB8705EA-BA34-4DFC-97D0-2231A531D06C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB8705EA-BA34-4DFC-97D0-2231A531D06C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB8705EA-BA34-4DFC-97D0-2231A531D06C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E84C5415-168F-4759-83DB-B08DCF2AF49E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E84C5415-168F-4759-83DB-B08DCF2AF49E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E84C5415-168F-4759-83DB-B08DCF2AF49E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E84C5415-168F-4759-83DB-B08DCF2AF49E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5906854C-8A63-47EB-9F30-F3DB375D9174}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5906854C-8A63-47EB-9F30-F3DB375D9174}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5906854C-8A63-47EB-9F30-F3DB375D9174}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5906854C-8A63-47EB-9F30-F3DB375D9174}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
