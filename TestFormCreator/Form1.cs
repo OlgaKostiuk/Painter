@@ -21,8 +21,11 @@ namespace TestFormCreator
 
             PMenu testPMenu = new PMenu();
             testPMenu.xcom = axcom;
-
             Controls.Add(testPMenu);
+
+            PToolBar testPToolBar = new PToolBar();
+            testPToolBar.xcom = axcom;
+         //   Controls.Add(testPToolBar);
         }
     }
 }

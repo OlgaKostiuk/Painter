@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Painter.Commands.Actions;
+using PainterTests.UnitTests.Mocks;
 using Painter.Commands;
-using System.Windows.Forms;
 
-namespace PainterTests.AutoTests.Mocks.Actions
+namespace Actions
 {
-    class ActionOpen : IActionOpen
+    internal class ActionOpen : IActionOpen
     {
         IXCommand cmd;
         public ActionOpen(IXCommand cmd)
@@ -19,7 +15,8 @@ namespace PainterTests.AutoTests.Mocks.Actions
 
         public void ActionPerformed(object sender, EventArgs e)
         {
-            MessageBox.Show("Open", "Open");
+            (cmd as UXCommand).Result = "Open";
         }
+
     }
 }
