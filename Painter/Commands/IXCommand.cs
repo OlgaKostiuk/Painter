@@ -10,5 +10,6 @@ namespace Painter.Commands
         IActionSave ActionSave { get; }
         IActionAddTab ActionAddTab { get; }
         IActionSelectTab ActionSelectTab { get; }
+        IActionLanguage ActionLanguage { get; }
     }
 }

@@ -15,6 +15,12 @@ namespace Painter
 
         public Form1()
         {
+            if (!String.IsNullOrEmpty(Properties.Settings.Default.Language))
+            {
+                System.Threading.Thread.CurrentThread.CurrentUICulture = System.Globalization.CultureInfo.GetCultureInfo(Properties.Settings.Default.Language);
+                System.Threading.Thread.CurrentThread.CurrentCulture = System.Globalization.CultureInfo.GetCultureInfo(Properties.Settings.Default.Language);
+            }
+
             InitializeComponent();
             PluginsManager = new PluginsManager();
 
@@ -45,7 +51,7 @@ namespace Painter
                     if (menuItem.Name == "figurePluginsToolStripMenuItem")
                     {
                         var item = figurePlugin.getMenu();
-                        item.Click += (s,ev)=>pLeftToolBox1.AddPlugin(figurePlugin);
+                        item.Click += (s, ev) => pLeftToolBox1.AddPlugin(figurePlugin);
                         menuItem.DropDownItems.Add(item);
                     }
                 }
@@ -57,3 +63,4 @@ namespace Painter
 
     }
 }
+

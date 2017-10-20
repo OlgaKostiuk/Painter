@@ -22,7 +22,7 @@ namespace UnitTestProject1.AutoTests
             //Application application = Application.Launch(POM.AppPath);
             //window = application.GetWindow(POM.WindowName, InitializeOption.NoCache);
             //POM.Window = window;
-          //  Application application = Application.Launch(@".\TestFormCreator\bin\Debug\TestFormCreator");
+       //    Application application = Application.Launch(@".\..\..\TestFormCreator\bin\Debug\TestFormCreator");
             Application application = Application.Launch(@"E:\work\AllPainters\WinForms\forVladYaroslav\GIT\Painter\TestFormCreator\bin\Debug\TestFormCreator");
             window = application.GetWindow("Form1", InitializeOption.NoCache);
             POM.Window = window;
@@ -42,13 +42,13 @@ namespace UnitTestProject1.AutoTests
         [Test]
         public void TestFileMenu()
         {
-            //POM.MenuBar.FileMenu.Click();
-            //Assert.AreEqual(true, POM.MenuBar.SOpenMenu.Enabled);
-            //Assert.AreEqual(true, POM.MenuBar.SSaveMenu.Enabled);
-            //Assert.AreEqual(true, POM.MenuBar.SExitMenu.Enabled);
-            TestMenuClick(POM.MenuBar.SSaveMenu, "Save");
-            TestMenuClick(POM.MenuBar.SOpenMenu, "Open");
-            TestMenuClick(POM.MenuBar.SExitMenu, "Exit");
+            POM.MenuBar.FileMenu.Click();
+            Assert.AreEqual(true, POM.MenuBar.SOpenMenu.Enabled);
+            Assert.AreEqual(true, POM.MenuBar.SSaveMenu.Enabled);
+            Assert.AreEqual(true, POM.MenuBar.SExitMenu.Enabled);
+            //TestMenuClick(POM.MenuBar.SSaveMenu, "Save");
+            //TestMenuClick(POM.MenuBar.SOpenMenu, "Open");
+            //TestMenuClick(POM.MenuBar.SExitMenu, "Exit");
         }
 
         [Test]

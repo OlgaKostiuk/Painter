@@ -32,13 +32,22 @@ namespace Painter
         /// </summary>
         private void InitializeComponent()
         {
-            this.pRightToolBox1 = new PRightToolBox();
-            this.pLeftToolBox1 = new PLeftToolBox();
-            this.pStatusBar1 = new PStatusBar();
-            this.pToolBar1 = new PToolBar();
-            this.pMenu1 = new PMenu();
-            this.pTabControl1 = new PTabControl();
+            this.pTabControl1 = new Painter.Views.Drawing.PTabControl();
+            this.pRightToolBox1 = new Painter.Views.ToolBox.PRightToolBox();
+            this.pLeftToolBox1 = new Painter.Views.ToolBox.PLeftToolBox();
+            this.pStatusBar1 = new Painter.Views.PStatusBar();
+            this.pToolBar1 = new Painter.Views.PToolBar();
+            this.pMenu1 = new Painter.Views.PMenu();
             this.SuspendLayout();
+            // 
+            // pTabControl1
+            // 
+            this.pTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pTabControl1.Location = new System.Drawing.Point(181, 55);
+            this.pTabControl1.Name = "pTabControl1";
+            this.pTabControl1.SelectedIndex = 0;
+            this.pTabControl1.Size = new System.Drawing.Size(617, 544);
+            this.pTabControl1.TabIndex = 7;
             // 
             // pRightToolBox1
             // 
@@ -79,14 +88,6 @@ namespace Painter
             this.pMenu1.Name = "pMenu1";
             this.pMenu1.Size = new System.Drawing.Size(979, 26);
             this.pMenu1.TabIndex = 0;
-            // 
-            // pTabControl1
-            // 
-            this.pTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pTabControl1.Location = new System.Drawing.Point(181, 55);
-            this.pTabControl1.Name = "pTabControl1";
-            this.pTabControl1.Size = new System.Drawing.Size(617, 544);
-            this.pTabControl1.TabIndex = 7;
             // 
             // Form1
             // 

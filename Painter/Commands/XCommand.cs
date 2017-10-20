@@ -16,6 +16,7 @@ namespace Painter.Commands
         public IActionSave ActionSave { get; }
         public IActionAddTab ActionAddTab { get; }
         public IActionSelectTab ActionSelectTab { get; }
+        public IActionLanguage ActionLanguage { get; }
 
         public XCommand()
         {
@@ -23,6 +24,7 @@ namespace Painter.Commands
             ActionSave = new ActionSave(this);
             ActionAddTab = new ActionAddTab(this);
             ActionSelectTab = new ActionSelectTab(this);
+            ActionLanguage = new ActionLanguage(this);
         }
     }
 }

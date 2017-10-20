@@ -45,13 +45,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\Actions\ActionLanguage.cs" />
     <Compile Include="Commands\Actions\ActionAddTab.cs" />
     <Compile Include="Commands\Actions\ActionSelectTab.cs" />
     <Compile Include="Commands\Actions\Interfaces\IActionSelectTab.cs" />
     <Compile Include="Commands\Actions\Interfaces\IActionSave.cs" />
     <Compile Include="Commands\Actions\Interfaces\IActionOpen.cs" />
     <Compile Include="Commands\Actions\Interfaces\IActionAddTab.cs" />
+    <Compile Include="Commands\Actions\Interfaces\IActionLanguage.cs" />
     <Compile Include="Commands\IXCommand.cs" />
+    <Compile Include="MyString.ru.Designer.cs">
+      <DependentUpon>MyString.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MyString.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyString.resx</DependentUpon>
+    </Compile>
     <Compile Include="Plugins\Default\PropertyEditor.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -122,6 +134,14 @@
     <Compile Include="Commands\Data\XImage.cs" />
     <Compile Include="Commands\Data\XText.cs" />
     <Compile Include="Commands\XCommand.cs" />
+    <EmbeddedResource Include="MyString.ru.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MyString.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyString.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MyString.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Plugins\Default\PropertyEditor.resx">
       <DependentUpon>PropertyEditor.cs</DependentUpon>
     </EmbeddedResource>
@@ -142,14 +162,24 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\PMenu.ru.resx">
+      <DependentUpon>PMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\PStatusBar.resx">
       <DependentUpon>PStatusBar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\PToolBar.resx">
       <DependentUpon>PToolBar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\PToolBar.ru.resx">
+      <DependentUpon>PToolBar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\ToolBox\PLeftToolBox.resx">
+      <DependentUpon>PLeftToolBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ToolBox\PLeftToolBox.ru.resx">
       <DependentUpon>PLeftToolBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\ToolBox\PRightToolBox.resx">

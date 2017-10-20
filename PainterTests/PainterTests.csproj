@@ -61,6 +61,8 @@
     <Reference Include="UIAutomationClient" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutoTests\Mocks\Actions\ActionLanguage.cs" />
+    <Compile Include="UnitTests\Mocks\Actions\ActionLanguage.cs" />
     <Compile Include="UnitTests\MenuActionTests.cs" />
     <Compile Include="UnitTests\Mocks\Actions\ActionSelectTab.cs" />
     <Compile Include="UnitTests\Mocks\Actions\ActionAddTab.cs" />

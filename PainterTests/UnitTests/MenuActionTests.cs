@@ -32,7 +32,7 @@ namespace Tests
         //   [TestCase("Exit", "Exit")]
         public void TestFileMenuActions(string name, string result)
         {
-            ToolStripMenuItem fileItem = menuBar.menuStrip1.Items["File"] as ToolStripMenuItem;
+            ToolStripMenuItem fileItem = menuBar.menuStrip1.Items[0] as ToolStripMenuItem;
             fileItem.DropDownItems[name].PerformClick();
             NUnit.Framework.Assert.AreEqual(result, ucommand.Result);
 

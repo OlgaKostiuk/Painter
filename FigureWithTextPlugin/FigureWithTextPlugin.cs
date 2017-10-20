@@ -33,6 +33,7 @@ namespace FigureWithTextPlugin
         public Button getToolBox()
         {
             Button btn = new Button();
+            btn.AutoSize = true;
             btn.Text = "Figure with text";
             return btn;
         }

@@ -20,8 +20,8 @@ namespace UnitTestProject1.AutoTests
     public class POM
     {
         public static Window Window { get; set; }
-        //public static string AppPath => @"E:\work\PainterForVladYaroslav\GIT\PainterTests\Painter\bin\Debug\Painter";
-        public static string AppPath => @".\Painter\bin\Debug\Painter"; //path relative to solution folder
+        public static string AppPath => @"E:\work\AllPainters\WinForms\forVladYaroslav\GIT\Painter\Painter\bin\Debug\Painter";
+    //    public static string AppPath => @".\Painter\bin\Debug\Painter"; //path relative to solution folder
         public static string WindowName => "Form1";
 
         public static class MenuBar

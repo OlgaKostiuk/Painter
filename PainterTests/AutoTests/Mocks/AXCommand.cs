@@ -16,6 +16,7 @@ namespace PainterTests.AutoTests.Mocks
         public IActionSave ActionSave { get; }
         public IActionAddTab ActionAddTab { get; }
         public IActionSelectTab ActionSelectTab { get; }
+        public IActionLanguage ActionLanguage { get; }
 
         public AXCommand()
         {
@@ -23,6 +24,7 @@ namespace PainterTests.AutoTests.Mocks
             ActionSave = new Actions.ActionSave(this);
             ActionAddTab = new Actions.ActionAddTab(this);
             ActionSelectTab = new Actions.ActionSelectTab(this);
+            ActionLanguage = new Actions.ActionLanguage(this);
         }
     }
 }
