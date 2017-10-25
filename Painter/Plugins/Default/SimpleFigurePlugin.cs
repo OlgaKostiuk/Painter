@@ -30,6 +30,7 @@ namespace Painter.Plugins.Default
         {
             Button btn = new Button();
             btn.Text = "Simple figure";
+            btn.AutoSize = true;
             return btn;
         }
     }

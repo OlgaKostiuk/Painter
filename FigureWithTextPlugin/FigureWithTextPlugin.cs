@@ -35,6 +35,7 @@ namespace FigureWithTextPlugin
             Button btn = new Button();
             btn.AutoSize = true;
             btn.Text = "Figure with text";
+            btn.AutoSize = true;
             return btn;
         }
     }
